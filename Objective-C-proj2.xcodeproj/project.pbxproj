@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		261E734B2BCE689700AEC38F /* CustomAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 261E734A2BCE689600AEC38F /* CustomAPI.m */; };
 		26E825E22BCD1C7100889D18 /* Objective_C_proj2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E825E12BCD1C7100889D18 /* Objective_C_proj2App.swift */; };
 		26E825E42BCD1C7100889D18 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E825E32BCD1C7100889D18 /* ContentView.swift */; };
 		26E825E62BCD1C7800889D18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26E825E52BCD1C7800889D18 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 		26E825F32BCD1C7800889D18 /* Objective_C_proj2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E825F22BCD1C7800889D18 /* Objective_C_proj2Tests.swift */; };
 		26E825FD2BCD1C7800889D18 /* Objective_C_proj2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E825FC2BCD1C7800889D18 /* Objective_C_proj2UITests.swift */; };
 		26E825FF2BCD1C7800889D18 /* Objective_C_proj2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E825FE2BCD1C7800889D18 /* Objective_C_proj2UITestsLaunchTests.swift */; };
+		26E8260E2BCD1E5E00889D18 /* TestAPI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26E8260C2BCD1E5E00889D18 /* TestAPI.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		261E734A2BCE689600AEC38F /* CustomAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAPI.m; sourceTree = "<group>"; };
+		261E734C2BCE68DE00AEC38F /* CustomAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomAPI.h; sourceTree = "<group>"; };
 		26E825DE2BCD1C7100889D18 /* Objective-C-proj2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Objective-C-proj2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		26E825E12BCD1C7100889D18 /* Objective_C_proj2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Objective_C_proj2App.swift; sourceTree = "<group>"; };
 		26E825E32BCD1C7100889D18 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +48,9 @@
 		26E825F82BCD1C7800889D18 /* Objective-C-proj2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Objective-C-proj2UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		26E825FC2BCD1C7800889D18 /* Objective_C_proj2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Objective_C_proj2UITests.swift; sourceTree = "<group>"; };
 		26E825FE2BCD1C7800889D18 /* Objective_C_proj2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Objective_C_proj2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		26E8260B2BCD1E5D00889D18 /* Objective-C-proj2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Objective-C-proj2-Bridging-Header.h"; sourceTree = "<group>"; };
+		26E8260C2BCD1E5E00889D18 /* TestAPI.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TestAPI.cpp; sourceTree = "<group>"; };
+		26E8260D2BCD1E5E00889D18 /* TestAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestAPI.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +78,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		261E73482BCE678600AEC38F /* TestAPI */ = {
+			isa = PBXGroup;
+			children = (
+				26E8260C2BCD1E5E00889D18 /* TestAPI.cpp */,
+				26E8260D2BCD1E5E00889D18 /* TestAPI.h */,
+			);
+			path = TestAPI;
+			sourceTree = "<group>";
+		};
+		261E73492BCE67AC00AEC38F /* CustomAPI */ = {
+			isa = PBXGroup;
+			children = (
+				261E734A2BCE689600AEC38F /* CustomAPI.m */,
+				261E734C2BCE68DE00AEC38F /* CustomAPI.h */,
+			);
+			path = CustomAPI;
+			sourceTree = "<group>";
+		};
 		26E825D52BCD1C7100889D18 = {
 			isa = PBXGroup;
 			children = (
@@ -94,10 +119,13 @@
 		26E825E02BCD1C7100889D18 /* Objective-C-proj2 */ = {
 			isa = PBXGroup;
 			children = (
+				261E73492BCE67AC00AEC38F /* CustomAPI */,
+				261E73482BCE678600AEC38F /* TestAPI */,
 				26E825E12BCD1C7100889D18 /* Objective_C_proj2App.swift */,
 				26E825E32BCD1C7100889D18 /* ContentView.swift */,
 				26E825E52BCD1C7800889D18 /* Assets.xcassets */,
 				26E825E72BCD1C7800889D18 /* Preview Content */,
+				26E8260B2BCD1E5D00889D18 /* Objective-C-proj2-Bridging-Header.h */,
 			);
 			path = "Objective-C-proj2";
 			sourceTree = "<group>";
@@ -195,6 +223,7 @@
 				TargetAttributes = {
 					26E825DD2BCD1C7100889D18 = {
 						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
 					};
 					26E825ED2BCD1C7800889D18 = {
 						CreatedOnToolsVersion = 15.2;
@@ -257,8 +286,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26E8260E2BCD1E5E00889D18 /* TestAPI.cpp in Sources */,
 				26E825E42BCD1C7100889D18 /* ContentView.swift in Sources */,
 				26E825E22BCD1C7100889D18 /* Objective_C_proj2App.swift in Sources */,
+				261E734B2BCE689700AEC38F /* CustomAPI.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +450,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Objective-C-proj2/Preview Content\"";
@@ -438,6 +470,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.naisys.Objective-C-proj2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Objective-C-proj2/Objective-C-proj2-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -448,6 +482,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Objective-C-proj2/Preview Content\"";
@@ -467,6 +502,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.naisys.Objective-C-proj2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Objective-C-proj2/Objective-C-proj2-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

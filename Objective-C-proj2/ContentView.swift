@@ -14,6 +14,13 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundStyle(.tint)
             Text("Hello, world!")
+            
+            Button(String(validatingUTF8: test_api_hello())!){
+                NSLog(String(validatingUTF8: test_api_hello())!)
+                
+                var temp = TestObject()
+                temp.doSomething()
+            }
         }
         .padding()
     }
