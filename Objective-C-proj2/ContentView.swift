@@ -10,29 +10,25 @@ import SwiftUI
 struct ContentView: View {
     
     @State private var isShowingSecondView = false
+    @State private var searchText = ""
+    @State private var slctTab = 0
     
     var body: some View {
         NavigationStack {
             VStack {
-                Image(systemName: "globe")
-                    .imageScale(.large)
-                    .foregroundStyle(.tint)
-                Text("Hello, world!")
-                
-                Button("Press"){
-                    NSLog(String(validatingUTF8: test_api_hello())!)
-                    
-                    var temp = TestObject()
-                    temp.doSomething()
-                }
+                TextField("Search...", text: $searchText)
+                    .padding()
+                    .textFieldStyle(PlainTextFieldStyle())
+                Spacer()
                 NavigationLink(destination: SecondView(), isActive: $isShowingSecondView) {
                                     Text("Go to Second View")
                                 }
+                CustomTabBar(selectedTab: $slctTab)
             
             }
             .padding()
-            .navigationTitle("First View")
-        }
+            .navigationTitle("Home")
+        }.padding(0)
     }
 }
 
