@@ -45,6 +45,58 @@ struct SecondView: View {
     }
 }
 
+struct CustomTabBar: View {
+    @Binding var selectedTab: Int
+    
+    var body: some View {
+        HStack {
+            Spacer()
+            
+            Button(action: {
+                self.selectedTab = 0
+            }) {
+                Image(systemName: "house")
+                    .padding()
+            }
+            .foregroundColor(selectedTab == 0 ? .blue : .gray)
+            
+            Spacer()
+            
+            Button(action: {
+                self.selectedTab = 1
+            }) {
+                Image(systemName: "magnifyingglass")
+                    .padding()
+            }
+            .foregroundColor(selectedTab == 1 ? .blue : .gray)
+            
+            Spacer()
+            
+            Button(action: {
+                self.selectedTab = 2
+            }) {
+                Image(systemName: "bell")
+                    .padding()
+            }
+            .foregroundColor(selectedTab == 2 ? .blue : .gray)
+            
+            Spacer()
+            
+            Button(action: {
+                self.selectedTab = 3
+            }) {
+                Image(systemName: "person")
+                    .padding()
+            }
+            .foregroundColor(selectedTab == 3 ? .blue : .gray)
+            
+            Spacer()
+        }
+        .frame(height: 50)
+        .background(Color("#414141"))
+    }
+}
+
 #Preview {
     ContentView()
 }
